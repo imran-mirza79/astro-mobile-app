@@ -25,6 +25,7 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
+  compressHTML: true,
   output: 'static',
 
   integrations: [
@@ -63,7 +64,7 @@ export default defineConfig({
           removeAttributeQuotes: false,
         },
       },
-      Image: false,
+      Image: true,
       JavaScript: true,
       SVG: false,
       Logger: 1,
