@@ -29,16 +29,11 @@ const metadata = {
 <Layout metadata={metadata}>
   <Fragment slot="header">
     <Header
+      id="header"    
       position="left"
       links={[
         { text: 'Terms', href: getPermalink('/terms') },
         { text: 'Privacy', href: getPermalink('/privacy') },
-      ]}
-      actions={[
-        {
-          text: 'Download',
-          href: '#download',
-        },
       ]}
     />
   </Fragment>
